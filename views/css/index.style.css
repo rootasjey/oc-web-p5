@@ -1,0 +1,232 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+}
+
+header {
+  background-color: cornsilk;
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*margin: 0px auto 180px;*/
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+header h1 {
+  /*background-color: crimson;*/
+  color: #7a4c18;
+  margin-left: 25px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: 10px;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+header ul li {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  background-image: url(/images/images.jpg);
+  background-size: cover;
+  background-position-x: -80px;
+  width: 100%;
+  height: 100%;
+}
+
+.entête {
+  background-color: #3d240c;
+  width: 98%;
+  min-height: 105px;
+  text-align: center;
+  opacity: 0.8;
+  border-radius: 15px;
+  margin: 55px auto 5px auto;
+  border: 1px solid #271e15;
+  -webkit-box-shadow: 0px 5px 5px  black;
+          box-shadow: 0px 5px 5px  black;
+}
+
+.entête p {
+  font-size: 17px;
+  color: whitesmoke;
+}
+
+.entête h2 {
+  font-size: 20px;
+  color: whitesmoke;
+  text-transform: uppercase;
+  padding: 15px;
+}
+
+.big-box {
+  width: 98%;
+  height: 70%;
+  padding: 5px;
+  margin: 0px auto 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.right-box {
+  width: 100%;
+  height: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-y: auto;
+}
+
+.big-card {
+  background-color: #52402f;
+  width: 40%;
+  height: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #271e15;
+  -webkit-box-shadow: 0px 0px 5px  black;
+          box-shadow: 0px 0px 5px  black;
+  overflow-y: auto;
+}
+
+.box-card {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  cursor: pointer;
+  overflow-y: auto;
+}
+
+/************
+class à injecter via le javascript
+
+*************/
+.card {
+  background-color: #9c7543;
+  width: 130px;
+  height: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+  border-radius: 0px 0px 5px 5px;
+  margin: 0px auto 10px auto;
+  -webkit-box-shadow: 3px 3px 2px #4e351d;
+          box-shadow: 3px 3px 2px #4e351d;
+}
+
+.card-img {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0 auto;
+}
+
+.card-infos {
+  background-color: #8e52b9;
+  border-radius: 5px;
+  width: 85%;
+  height: 45px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: 2px 2px 5px #381d41;
+          box-shadow: 2px 2px 5px #381d41;
+}
+
+.info-name {
+  color: whitesmoke;
+  text-decoration: none;
+  height: 60%;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.info-price {
+  color: whitesmoke;
+  text-decoration: none;
+  height: 40%;
+  font-size: 13px;
+}
+
+/***************
+fin des class a injecter via javascript
+****************/
+/*# sourceMappingURL=index.style.css.map */

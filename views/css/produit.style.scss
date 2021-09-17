@@ -1,0 +1,136 @@
+@import './templatePage.scss';
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+
+
+body {
+    background-color: #9c7543;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .container{
+    //background-color: crimson;
+    width: 100%;
+    height: 80%;
+    //height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  #card-teddy{
+    background-color: rgb(51, 34, 28);
+    width:90%;
+    //height: 85%;
+    height: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  
+  //*********
+  //class à injecter depuis javascript
+  //*********
+  
+  
+  .card{
+    //background-color: darkcyan;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .card-img{
+      //background-color: green;
+      width: 95%;
+      height: 70%;
+      padding: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  
+  img{
+      border-radius: 25px;
+      border: 3px solid rgb(83, 45, 27);
+      height: 100%;
+      object-fit:fill;
+  }
+
+  
+  .card-infos{
+    //background-color: hotpink;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+
+  .info-name{
+    background-color: rgb(142, 82, 185);
+    width: 50%;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 15px;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 5px rgba($color: #080708, $alpha: 1.0);
+  }
+
+
+  .info-price{
+    //background-color: indigo;
+    background-color: rgb(142, 82, 185);
+    width: 50%;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 20px;
+    box-shadow: 2px 2px 5px rgba($color: #080708, $alpha: 1.0)
+  }
+
+
+
+
+.ajout{
+    background-color: pink;
+    width: 90%;
+    height: 50px;
+    margin-top: 35px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+

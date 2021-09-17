@@ -1,0 +1,162 @@
+@import './templatePage.scss';
+
+
+
+
+
+body{
+    //background-color: rgb(205, 209, 208);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container{
+    //background-color: cadetblue;
+    background-image: url(/images/images.jpg);
+    background-size: cover;
+    background-position-x: -80px;
+    width: 100%;
+    height: 100%;
+}
+
+
+.entête{
+    background-color: rgb(61, 36, 12);
+    width: 98%;
+    min-height: 105px;
+    text-align: center;
+    opacity: 0.8;
+    border-radius: 15px;
+    margin: 55px auto 5px auto;
+    border: 1px solid rgb(39, 30, 21);
+    box-shadow: 0px 5px 5px  black;
+}
+
+.entête p{
+    font-size: 17px;
+    color: whitesmoke;
+}
+
+.entête h2{
+    font-size: 20px;
+    color: whitesmoke;
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+.big-box{
+    //background-color: blueviolet;
+    width: 98%;
+    height: 70%;
+    padding: 5px;
+    margin: 0px auto 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-box{
+    //background-color: black;
+    width: 100%;
+    //height: 92%;
+
+    height: 95%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    overflow-y: auto;
+}
+
+
+.big-card{
+    background-color: rgb(82, 64, 47);
+    width: 40%;
+    height: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid rgb(39, 30, 21);
+    box-shadow:  0px 0px 5px  black;
+    overflow-y: auto;
+}
+
+.box-card{
+    //background-color: green;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    overflow-y: auto;
+}
+
+
+
+/************
+class à injecter via le javascript
+
+*************/
+
+.card{
+    //background-color: grey;
+    //background-color: cadetblue;
+    background-color: #9c7543;
+    //box-shadow: inset;
+    width: 130px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    border-radius: 0px 0px 5px 5px;
+    margin: 0px auto 10px auto;
+    box-shadow: 3px 3px 2px rgba($color: #4e351d, $alpha: 1.0);
+}
+
+
+.card-img{
+    width: 80%;
+    //height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+}
+
+.card-infos{
+    //background-color: indigo;
+    background-color: rgb(142, 82, 185);
+    border-radius: 5px;
+    width: 85%;
+    height: 45px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 2px 2px 5px rgba($color: #381d41, $alpha: 1.0);
+}
+
+.info-name{
+    //background-color: crimson;
+    color: whitesmoke;
+    text-decoration: none;
+    height: 60%;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.info-price{
+    //background-color: rgb(20, 220, 53);
+    color: whitesmoke;
+    text-decoration: none;
+    height:40%;
+    font-size: 13px;
+}
+
+
+/***************
+fin des class a injecter via javascript
+****************/

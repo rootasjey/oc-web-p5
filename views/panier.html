@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/panier.style.css">
+    
+    <title>Panier</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Orinoco
+        </h1>
+        <ul>
+            <li> <a href="#">acceuil</a> </li>
+            <li> <a href="#">contact</a> </li>
+        </ul>
+    </header>
+    <div class="container">
+        <h1>Panier</h1>
+            <div class="box" id="box-cart">
+                <div class="cart__items-count"></div>
+                <div class="cart__total"></div>
+                <div class="cart__items"></div>
+            </div>
+
+            <form action="POST">
+                <label for="firstName">
+                    <input type="text" id ="firstName" name="firstName" placeholder="Votre prénom">
+                </label>
+                <label for="lastName">
+                    <input type="text" id ="lastName" name="lastName" placeholder="Votre nom ">
+                </label>
+                <label for="adress">
+                    <input type="text" id ="adress" name="adress" placeholder="Votre adresse">
+                </label>
+                <label for="city">
+                    <input type="text" id ="city" name="city" placeholder="Votre ville">
+                </label>
+                <label for="email">
+                    <input type="email" id ="email" name="email" placeholder="Votre email">
+                </label>
+            </form>
+
+            <a type="btn" href="confirmation.html" class="button" id="button">
+                <h2>Commander</h2>
+            </a>
+    </div>
+    
+    <script src="./panier.js" defer></script>
+</body>
+</html>
