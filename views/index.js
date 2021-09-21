@@ -1,7 +1,7 @@
 main()
 
 function main() {
-  fetch('http://localhost:3000/api/teddies')
+  fetch('http://localhost:2021/api/teddies')
   .then((response) => response.json())
   .then(function (data) {
     const container = document.getElementById("container")

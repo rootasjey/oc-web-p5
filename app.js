@@ -29,6 +29,7 @@ app.use(express.static('views'));
 
 //pour etre dirigé sur la page html a partir de l'url de base 
 app.get('/', (req, resp) => {
+  console.log("node.js return view")
   resp.sendFile(path.join(__dirname, '/views/index.html'));
 });
 
