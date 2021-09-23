@@ -54,10 +54,10 @@ function get(teddy) {
     domItemDropdown.name = 'colors'
     domItemDropdown.name = 'colors-select'
     domItemDropdown.classList.add('color-select')
-
+ 
     for (const color of data.colors) {
         //console.log(color)
-        const option = document.createElement('option')
+       const option = document.createElement('option')
         option.classList.add('color-option')
         option.value = color
         option.text = color
@@ -80,12 +80,27 @@ function get(teddy) {
     Container.appendChild(domItem)
 
     
+//Récuperer les données complètes de l'objet de l'api dans une constante
+const donnéesApi = {
+  "photo":data.imageUrl,
+  "nom": data.name,
+  "prix": data.price/100 +"$",
+  //"option":data.colors
+  "option":data.color
+}
+  console.log(donnéesApi)
+
+
     domItemAdd.addEventListener( 'click', ()=>{
-      window.location = `panier.html`
+      window.location.href = "panier.html"
+
+
     })
   })
   
 }
+
+
 
 
 
