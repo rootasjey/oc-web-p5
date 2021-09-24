@@ -1,3 +1,5 @@
+/*
+
 //declaration des variables globales
 const boxCart = document.getElementById('box-cart')
 const ajout = document.getElementsByClassName('ajout')
@@ -19,14 +21,13 @@ recupStorage()
 //         recupStorage()
 //     }
 
-//pour sauvegarder les données dans le local storage
+
+
 function createStorage(){
-//convertir l'objet javascript en objet json
-    localStorage.setItem(/*clé*/"produit", /*objet*/ JSON.stringify("${teddyId}"))
+    localStorage.setItem("produit",  JSON.stringify("${teddyId}"))
+   
     console.log("crée")
 } 
-
-//pour recuperer les données sauvegardées
 function recupStorage(){
 //lire l'objet json en clair
     //localStorage.getItem((JSON.parse("produit"))
@@ -70,11 +71,6 @@ function recupStorage(){
         domCartItems.appendChild(domCartItem)
     }
 
-    //mise en page avec les données recuperées
-      
-    /*for (const produit of produits) {
-        console.log(produit)
-    */
         const elementPanier = document.createElement('div')
         elementPanier.classList.add('cart-item')
 
@@ -92,3 +88,5 @@ function recupStorage(){
 
 //fin du addEventListener
 //})
+
+*/
