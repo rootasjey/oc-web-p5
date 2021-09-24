@@ -14,9 +14,8 @@ function get(teddyId) {
       const domItemName = document.createElement('div')
       const domItemPrice = document.createElement('div')
       const domItemImg = document.createElement('img')
-    
+    }
   })
-  
 }
 get(domCardTeddy)
 
