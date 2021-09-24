@@ -94,9 +94,20 @@ const donnéesApi = {
     domItemAdd.addEventListener( 'click', ()=>{
       window.location.href = "panier.html"
 
-
+        const donnéesRécup = JSON.parse(localStorage.getItem("produit"))
+        console.log(donnéesRécup)
+        if (donnéesRécup){
+          console.log(okkk)
+        }
+        else{
+          const a = JSON.stringify(localStorage.setItem("produit",donnéesApi) )
+        }
+  
+  
+      })
     })
-  })
+
+
   
 }
 
