@@ -1,7 +1,7 @@
 //declaration des variables globales
 const boxCart = document.getElementById('box-cart')
 const ajout = document.getElementsByClassName('ajout')
-
+const données = 
 
 recupStorage()
 
