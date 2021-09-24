@@ -84,30 +84,37 @@ function get(teddy) {
         const selectedColor = data.colors[domItemDropdown.selectedIndex]
         
         //Récuperer les données complètes de l'objet de l'api dans une constante
-        const cartItem = { // teddy
+        const produitItem = { // teddy
           "photo": data.imageUrl,
           "nom": data.name,
           "prix": data.price / 100 + "$",
           "option":selectedColor
         }
-  
-        // Panier
-        let cart = {
-          totalPrice: 0, // prix total
-          items: [], // articles ajoutés
-        }
         
         // On essaie de récup le panier depuis le localstorage
-        const savedCart = JSON.parse(localStorage.getItem("cart"))
-        console.log(savedCart)
+        const savedCart = JSON.parse(localStorage.getItem('cart'))
+        console.log(`savedCart: ${savedCart}`)
 
         if (savedCart) {
-          console.log("okkk")
-          cart = savedCart
-          cart.items.push(cartItem)
+          console.log("J'ai deja defini un produit dans le local storage sous la clé cart ")
+          savedCart.items.push(produitItem)
         }
         else {
-          const a = JSON.stringify(localStorage.setItem("cart", cartItem))
+          // Panier n'existe pas.
+          let cart = {
+            totalPrice: 0, // prix total
+            items: [
+              {
+                "photo": data.imageUrl,
+                "nom": data.name,
+                "prix": data.price / 100 + "$",
+                "option":selectedColor
+              }
+            ], // articles ajoutés
+          }
+
+          const a = JSON.stringify(localStorage.setItem("cart", produitItem))
+          localStorage.removeItem('cart')
         }
 
         //creation d un lien panier pour laisser le choix a l user au lieu de le forcer
